@@ -1,0 +1,38 @@
+.doc-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.doc-page h2 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: var(--gold);
+}
+
+.doc-page p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.doc-page ul {
+  margin-left: 20px;
+  margin-bottom: 12px;
+}
+
+.doc-page li {
+  margin-bottom: 6px;
+}
+
+.image-placeholder {
+  height: 180px;
+  margin: 16px 0;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px dashed var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-weight: bold;
+  border-radius: 10px;
+}

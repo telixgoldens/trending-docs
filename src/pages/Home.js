@@ -3,13 +3,13 @@ import React from "react";
 export default function Home() {
   return (
     <div>
-      <h1>Smart Intel Docs</h1>
-      <p>Your way to financial freedom.</p>
+      <h1>Trending Markets Docs</h1>
+      <p>Smart Intel is your way to financial freedom.</p>
 
       <section>
         <h2>Overview</h2>
         <p>
-          Smart Intel is a decentralized prediction market platform on BNB Chain.
+          Trending Markets is a decentralized prediction market platform on BNB Chain.
           Users can create and trade binary markets, track trending markets, and
           interact with vaults. This documentation guides you through all
           aspects of the platform—from contracts to frontend usage.
