@@ -1,0 +1,51 @@
+:root {
+  --bg-light: #ffffff;
+  --bg-dark: #0b0e11;
+  --text-light: #111;
+  --text-dark: #fff;
+  --accent: #f0b90b;
+  --sidebar-width: 240px;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.main {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  overflow-y: auto;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* Light theme */
+body.light {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+body.light .tm-sidebar {
+  background-color: #f9f9f9;
+  color: #111;
+}
+
+body.light .tm-sidebar a.active {
+  background-color: var(--accent);
+  color: #111;
+}
