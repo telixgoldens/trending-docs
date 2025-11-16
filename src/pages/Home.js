@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div>
+    <div className="doc-page">
       <h1>Trending Markets Docs</h1>
       <p>Smart Intel is your way to financial freedom.</p>
 

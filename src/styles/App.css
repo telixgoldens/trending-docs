@@ -2,50 +2,122 @@
   --bg-light: #ffffff;
   --bg-dark: #0b0e11;
   --text-light: #111;
-  --text-dark: #fff;
+  --text-dark: #e5e5e5;
   --accent: #f0b90b;
-  --sidebar-width: 240px;
+  --sidebar-width: 250px;
 }
 
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-}
-
-.app {
-  display: flex;
-  height: 100vh;
   background-color: var(--bg-dark);
   color: var(--text-dark);
 }
 
-.main {
+.docs-app {
+  display: flex;
+  height: 100vh;
+}
+
+.docs-main {
   flex: 1;
   margin-left: var(--sidebar-width);
+  padding: 32px 40px;
   overflow-y: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+p,
+li {
+  font-size: 1rem;
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+
+.docs-sidebar {
+  width: var(--sidebar-width);
+  background: #111315;
   padding: 20px;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
 }
 
-a {
-  text-decoration: none;
+.docs-sidebar .logo {
+  text-align: center;
+  margin-bottom: 25px;
 }
 
-h1, h2, h3 {
-  margin: 0;
+.docs-sidebar img {
+  width: 65px;
+  margin-bottom: 8px;
 }
 
-/* Light theme */
-body.light {
-  background-color: var(--bg-light);
-  color: var(--text-light);
+.docs-sidebar nav {
+  margin-top: 20px;
 }
 
-body.light .tm-sidebar {
-  background-color: #f9f9f9;
+.docs-sidebar a {
+  display: block;
+  padding: 8px 12px;
+  font-size: 1rem;
+  color: #cfcfcf;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.docs-sidebar a.active {
+  background: var(--accent);
   color: #111;
+  font-weight: 600;
 }
 
-body.light .tm-sidebar a.active {
-  background-color: var(--accent);
-  color: #111;
+.sidebar-group {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 15px 0 8px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.sidebar-subitems a {
+  margin-left: 12px;
+  font-size: 0.95rem;
+}
+
+.contracts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.contracts-grid a {
+  padding: 14px;
+  background: #1a1d21;
+  border-radius: 8px;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.contracts-grid a:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
 }

@@ -1,47 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/DocContent.css";
 
 export default function Vaults() {
   return (
-    <div>
+    <div className="doc-page">
       <h1>Smart Contracts & Vaults</h1>
+      <p>
+        This section covers all smart contracts powering the Trending Markets protocol.
+        Click on any contract to learn how it works and how to integrate it.
+      </p>
 
-      <section>
-        <h2>MarketFactory</h2>
-        <p>
-          The MarketFactory contract allows users to create new BinaryMarket
-          contracts with minimal gas usage. It integrates with the MinimalForwarder for meta-transactions.
-        </p>
-      </section>
-
-      <section>
-        <h2>BinaryMarket</h2>
-        <p>
-          Each BinaryMarket represents a single prediction market with YES/NO
-          outcomes. It tracks liquidity, user positions, and market resolution.
-        </p>
-      </section>
-
-      <section>
-        <h2>MinimalForwarder</h2>
-        <p>
-          Enables gasless transactions so users can interact with markets without paying gas directly.
-        </p>
-      </section>
-
-      <section>
-        <h2>OracleManager</h2>
-        <p>
-          Provides external data feeds to resolve markets accurately and securely.
-        </p>
-      </section>
-
-      <section>
-        <h2>AggregatorVault & LiquidityVault</h2>
-        <p>
-          AggregatorVault collects trading fees and rewards, while LiquidityVault
-          manages token reserves for each market.
-        </p>
-      </section>
+      <div className="contracts-grid">
+        <Link to="/contracts/marketfactory">MarketFactory</Link>
+        <Link to="/contracts/binarymarket">BinaryMarket</Link>
+        <Link to="/contracts/minimalforwarder">MinimalForwarder</Link>
+        <Link to="/contracts/oraclemanager">OracleManager</Link>
+        <Link to="/contracts/aggregatorvault">AggregatorVault</Link>
+        <Link to="/contracts/liquidityvault">LiquidityVault</Link>
+        <Link to="/contracts/smartaccount">Smart Account & Gas</Link>
+      </div>
     </div>
   );
 }

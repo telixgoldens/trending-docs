@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/DocContent.css";
+import "../../styles/DocContent.css";
 
 export default function AggregatorVault() {
   return (

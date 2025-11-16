@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Frontend() {
   return (
-    <div>
+    <div className="doc-page">
       <h1>Frontend Guide</h1>
 
       <section>
