@@ -1,4 +1,5 @@
 import React from "react";
+import binaryMarket from "../../assets/Binarymarket.png"
 import "../../styles/DocContent.css";
 
 export default function BinaryMarket() {
@@ -16,7 +17,7 @@ export default function BinaryMarket() {
       <p>
         Beginner tip: Check volume and probability percentages to make informed predictions.
       </p>
-      <div className="image-placeholder">[Insert BinaryMarket Example]</div>
+      <div className="image-placeholder"><img src={binaryMarket} alt="" className="img-logo"/></div>
     </div>
   );
 }

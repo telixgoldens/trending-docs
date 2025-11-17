@@ -1,4 +1,5 @@
 import React from "react";
+import marketFactory from "../../assets/marketfactory.png"
 import "../../styles/DocContent.css";
 
 export default function MarketFactory() {
@@ -17,7 +18,7 @@ export default function MarketFactory() {
       <p>
         Beginner tip: You interact with MarketFactory mostly via the frontend when creating new prediction markets.
       </p>
-      <div className="image-placeholder">[Insert MarketFactory Diagram]</div>
+      <div className="image-placeholder"><img src={marketFactory} alt="" className="img-logo"/></div>
     </div>
   );
 }

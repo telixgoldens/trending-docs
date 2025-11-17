@@ -26,6 +26,7 @@
 
 .image-placeholder {
   height: 180px;
+  width: 500px;
   margin: 16px 0;
   background: rgba(255, 255, 255, 0.05);
   border: 2px dashed var(--gold);
@@ -41,4 +42,9 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
   margin-top: 20px;
+}
+.img-logo{
+  width: 500px;
+  height: 180px;
+  border-radius: 10px;
 }

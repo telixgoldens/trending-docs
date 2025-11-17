@@ -1,4 +1,5 @@
 import React from "react";
+import liquidityVault from "../../assets/liquidityvault.png"
 import "../../styles/DocContent.css";
 
 export default function LiquidityVault() {
@@ -13,7 +14,7 @@ export default function LiquidityVault() {
         <li>Ensures stable prices and low slippage.</li>
         <li>Works with AggregatorVault for optimal fund management.</li>
       </ul>
-      <div className="image-placeholder">[Insert LiquidityVault Diagram]</div>
+      <div className="image-placeholder"><img src={liquidityVault} alt="" className="img-logo"/></div>
     </div>
   );
 }
