@@ -1,4 +1,5 @@
 import React from "react";
+import aggregatorVault from "../../assets/aggregator.png"
 import "../../styles/DocContent.css";
 
 export default function AggregatorVault() {
@@ -13,7 +14,7 @@ export default function AggregatorVault() {
         <li>Distributes tokens to relevant BinaryMarkets.</li>
         <li>Ensures security and proper accounting.</li>
       </ul>
-      <div className="image-placeholder">[Insert AggregatorVault Diagram]</div>
+      <div className="image-placeholder"><img src={aggregatorVault} alt="" className="img-logo"/></div>    
     </div>
   );
 }

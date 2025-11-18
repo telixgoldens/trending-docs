@@ -1,4 +1,5 @@
 import React from "react";
+import oralcleMan from "../../assets/oraclemanager.png"
 import "../../styles/DocContent.css";
 
 export default function OracleManager() {
@@ -13,7 +14,7 @@ export default function OracleManager() {
         <li>Ensures fair resolution of prediction markets.</li>
         <li>Supports multiple oracle providers for redundancy and accuracy.</li>
       </ul>
-      <div className="image-placeholder">[Insert OracleManager Diagram]</div>
+      <div className="image-placeholder"><img src={oralcleMan} alt="" className="img-logo"/></div>
     </div>
   );
 }
